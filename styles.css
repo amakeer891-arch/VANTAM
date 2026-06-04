@@ -875,6 +875,7 @@ h3 {
   font-weight: 700;
 }
 
+.contact-options a,
 .contact-options span {
   padding-bottom: 10px;
   color: var(--slate);
@@ -882,62 +883,30 @@ h3 {
   font-weight: 700;
 }
 
-.lead-form {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 16px;
-  padding: 30px;
+.contact-options a:hover {
+  color: var(--green);
+}
+
+.tally-card {
+  min-height: 660px;
+  padding: 18px;
   background: rgba(255, 253, 248, 0.82);
   border: 1px solid rgba(203, 213, 225, 0.92);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
 }
 
-.lead-form label {
-  display: grid;
-  gap: 8px;
-  color: var(--graphite);
-  font-size: 13px;
-  font-weight: 800;
-}
-
-.lead-form input,
-.lead-form select,
-.lead-form textarea {
+.tally-card iframe {
   width: 100%;
-  min-height: 48px;
-  padding: 12px 14px;
-  color: var(--graphite);
-  background: #ffffff;
-  border: 1px solid rgba(71, 85, 105, 0.28);
-  border-radius: var(--radius);
-  outline: none;
+  min-height: 610px;
+  display: block;
+  background: transparent;
+  border: 0;
 }
 
-.lead-form textarea {
-  resize: vertical;
-}
-
-.lead-form input:focus,
-.lead-form select:focus,
-.lead-form textarea:focus {
-  border-color: var(--green);
-  box-shadow: 0 0 0 4px rgba(113, 137, 109, 0.14);
-}
-
-.full-field,
-.form-status {
-  grid-column: auto;
-}
-
-.file-field input {
-  background: rgba(243, 244, 246, 0.8);
-}
-
-.form-status {
-  margin: 0;
-  color: var(--green);
-  font-weight: 800;
+.tally-fallback {
+  width: 100%;
+  margin-top: 14px;
 }
 
 .mobile-sticky-cta {
@@ -1102,7 +1071,6 @@ h3 {
   .process-grid,
   .package-grid,
   .contact-section,
-  .lead-form,
   .site-footer {
     grid-template-columns: 1fr;
   }
@@ -1180,7 +1148,7 @@ h3 {
     padding: 28px;
   }
 
-  .lead-form {
+  .tally-card {
     padding: 20px;
   }
 
